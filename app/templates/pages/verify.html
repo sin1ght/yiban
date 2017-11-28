@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>易班在线工作站系统1.0</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/metisMenu.min.css"/>
+
+    <link href="../css/main.css" rel="stylesheet">
+
+    <link href="../css/morris.css" rel="stylesheet">
+
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+            	<!--移动端-自适应-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">易班在线工作站系统1.0</a>
+            </div>
+			<!--导航栏右侧-->
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 个人中心</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login_out.html"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			<!--导航栏左侧-->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                    	<!--后台首页-->
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="搜索一下...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <!--普通li-->
+                        <li>
+                            <a href="teacher.html"><i class="fa fa-university fa-fw"></i> 首页</a>
+                        </li>
+                        <li>
+                            <a href="verify.html"><i class="fa fa-edit fa-fw"></i> 审核</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+       <!-- Page Content -->
+       <div id="page-wrapper">
+        	<!--大标题-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">审核</h1>
+                </div>
+            </div>
+            <!--介绍来一段说明-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        &nbsp;&nbsp;在本页面您可以查看学生提交的申请，为了方便您的查看，我们只显示了需要审核的，易班在线工作站系统上线测试中，望各位老师同学反馈问题或者提供优化建议，我们将不胜感激！<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1099718640&site=qq&menu=yes"><img border="0" class="alert-info" src="http://wpa.qq.com/pa?p=2:1099718640:52" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>.
+                    </div>
+                </div>
+            </div>
+            <!--列表 main 在该div下-->
+            <div class="row" id="card">
+            	
+            	<!--<div class="col-lg-4">-->
+					<!--&lt;!&ndash;<div class="panel panel-primary">&ndash;&gt;-->
+						<!--&lt;!&ndash;<div class="panel-heading" style="text-align: center;">学院工作站月度考核上报</div>&ndash;&gt;-->
+						<!--&lt;!&ndash;<div class="panel-body">&ndash;&gt;-->
+							<!--&lt;!&ndash;<p>学院：<span>计算机学院</span></p>&ndash;&gt;-->
+							<!--&lt;!&ndash;<p>月份:<span>1月报告</span></p>&ndash;&gt;-->
+							<!--&lt;!&ndash;<p>文件：<span><a href="https://view.officeapps.live.com/op/view.aspx?src=http://www.hackboy.top/1.doc">点击在线预览</a></span></p>&ndash;&gt;-->
+							<!--&lt;!&ndash;<p>申请时间：<span>2017-10-07 13:23:48</span></p>&ndash;&gt;-->
+						<!--&lt;!&ndash;</div>&ndash;&gt;-->
+						<!--&lt;!&ndash;<div class="panel-footer" align="center">&ndash;&gt;-->
+							<!--&lt;!&ndash;<button data-flag="flag123" class="btn btn-success" onclick="agree_click(this,0)">通过</button>&ndash;&gt;-->
+							<!--&lt;!&ndash;<button data-flag="flag123" class="btn btn-danger" onclick="reject_click(this,0)">驳回</button>&ndash;&gt;-->
+						<!--&lt;!&ndash;</div>&ndash;&gt;-->
+					<!--&lt;!&ndash;</div>&ndash;&gt;-->
+				<!--</div>-->
+                
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/metisMenu.min.js"></script>
+    <script src="../js/main.min.js"></script>
+    
+	<script type="text/javascript">
+		
+		//功能函数
+			//通过审核
+		 	function agree_click(e,sort){
+		 		var flags = $(e).attr('data-flag');
+		 		switch(sort){
+		 			case 0:
+		 				$.get(main_url + '/api/check_pass',{'flag':flags},function(res,status){
+		 					if(status){
+		 						alert("审核成功");
+                                location=location;
+		 					}
+		 					else{
+		 						alert("网络错误，请稍后重试！");
+		 					}
+		 				});
+		 				break;
+		 			case 1:
+		 				alert(2);
+		 				break;
+		 			case 2:
+		 				alert(3);
+		 				break;
+		 			default:
+		 				alert("执行默认，此时是第四种");
+		 		}
+		 	}
+		 	
+		 	//驳回函数
+		 	function reject_click(e,sort){
+		 		var flags = $(e).attr('data-flag');
+		 		var reasons = "";
+				var temp = 0;
+				curr_btn=$(this);
+		 		while(!reasons){
+		 			reasons = prompt("请输入驳回的原因，方便学生修改：","资料不完整");
+		 		}
+		 		
+		 		switch(sort){
+		 			case 0:
+		 				$.get(main_url + '/api/check_reject',{'flag':flags,'reason':reasons},function(res,status){
+		 					if(status){
+								temp = 1;
+//								alert(res.status);
+                                alert("审核成功");
+                                location=location;
+		 					}
+		 					else{
+		 						alert("网络错误，请稍后重试！");
+		 					}
+		 				});
+		 				break;
+		 			case 1:
+		 				alert(2);
+		 				break;
+		 			case 2:
+		 				alert(3);
+		 				break;
+		 			default:
+		 				alert("执行默认，此时是第四种");
+		 		}
+				if(temp){
+					curr_btn.parentsUntil('div col-lg-4').hide();
+				}
+				
+		 	}
+		
+		 $(document).ready(function(){
+		 	//一、请求月度考核
+		 	$.get(main_url+'/api/get_assessment',function(res,status){
+		 		if(status){
+		 			res.data.forEach(function(obj){
+		 				$('#card').append('<div class="col-lg-4"><div class="panel panel-primary"><div class="panel-heading" style="text-align: center;">学院工作站月度考核上报</div><div class="panel-body"><p>学院：<span>'+obj.academy+'</span></p><p>月份:<span>'+obj.month+'月报告</span></p><p>文件：<span><a href="https://view.officeapps.live.com/op/view.aspx?src='+obj.file_link+'">点击在线预览</a></span></p><p>申请时间：<span>'+obj.create_time+'</span></p></div><div class="panel-footer" align="center"><button data-flag="'+obj.flag+'"class="btn btn-success" onclick="agree_click(this,0)">通过</button><button data-flag="'+obj.flag+'"class="btn btn-danger" onclick="reject_click(this,0)">驳回</button></div></div>');
+		 			})
+		 		}
+		 		else{
+		 			alert('请求错误，请稍后尝试！');
+		 			return false;
+		 		}
+		 	});
+		 	//二、请求文化产品申请
+		 	
+		 	//三、请求文化产品申请
+		 	
+		 	//四、请求文化产品申请
+		 	
+		 });
+		 
+	</script>
+</body>
+
+</html>

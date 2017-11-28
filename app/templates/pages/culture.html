@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>易班在线工作站系统1.0</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/metisMenu.min.css"/>
+
+    <link href="../css/main.css" rel="stylesheet">
+
+    <link href="../css/morris.css" rel="stylesheet">
+
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+            	<!--移动端-自适应-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">易班在线工作站系统1.0</a>
+            </div>
+			<!--导航栏右侧-->
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> 个人中心</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> 注销</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			<!--导航栏左侧-->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                    	<!--后台首页-->
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="搜索一下...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <!--普通li-->
+                        <li>
+                            <a href="index.html"><i class="fa fa-university fa-fw"></i> 首页</a>
+                        </li>
+                        <li>
+                            <a href="yuedu.html"><i class="fa fa-file-word-o fa-fw"></i> 学院工作站月度考核上报</a>
+                        </li>
+                        <li>
+                            <a href="culture.html"><i class="fa fa-shopping-cart fa-fw"></i> 工作站文化产品申请</a>
+                        </li>
+                        <li>
+                            <a href="goods.html"><i class="fa fa-recycle fa-fw"></i> 工作站物资借用管理</a>
+                        </li>
+                        <li>
+                            <a href="place.html"><i class="fa fa-flag-o fa-fw"></i> 工作站场地管理</a>
+                        </li>
+                        
+                        <!--下拉菜单-->
+                        <li>
+                            <a href="#"><i class="fa fa-th-large fa-fw"></i> 功能中心<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="progress.html">申请进度</a>
+                                </li>
+                                <li>
+                                    <a href="user_center.html">用户中心</a>
+                                </li>
+                                <li>
+                                    <a href="login_out.html">注销登陆</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+         <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+		        <!--大标题-->
+	            <div class="row">
+	            	<div class="col-lg-12">
+	                    <h1 class="page-header">工作站文化产品申请</h1>
+	                </div>
+	                <!--表单-->
+	            	<form  class="form-horizontal" role="form" method="POST" onsubmit="return false">
+	            		<!--选择物品-->
+	            		<div class="form-group">
+							<label for="name" class="col-sm-2 control-label">物品名称</label>
+							<div class="col-sm-10">
+								<select class="form-control" name="name" id="name">
+									<option>易班小虎</option>
+									<option>易班明信片</option>
+									<option>小虎吉祥物</option>
+									<option>小虎U盘</option>
+									<option>自定义</option>
+								</select>
+							</div>
+	            		</div>
+	            		<!--输入数量-->
+	            		<div class="form-group">
+							<label for="num" class="col-sm-2 control-label">物品数量</label>
+							<div class="col-sm-10">
+								<input type="number" placeholder="请输入数量，例：10" class="form-control" required name="num" id="num" />
+							</div>
+	            		</div>
+	            		<!--类别-->
+	            		<div class="form-group">
+						    <label for="category" class="col-sm-2 control-label">物品类别</label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" maxlength="20" id="category" required name="category" placeholder="请输入类别，例：生活">
+						    </div>
+						</div>
+		                <!--填写学号-->
+		                <div class="form-group">
+						    <label for="stu_num" class="col-sm-2 control-label">学号</label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" maxlength="8" id="stu_num" required name="stu_num" placeholder="请输入学号，例:20164404">
+						    </div>
+						</div>
+						<!--选择学院-->
+	            		<div class="form-group">
+							<label for="academy" class="col-sm-2 control-label">选择学院</label>
+							<div class="col-sm-10">
+								<select class="form-control" name="academy" id="academy">
+									<option>计算机学院</option>
+									<option>软件学院</option>
+									<option>艺术学院</option>
+									<option>通信学院</option>
+									<option>...</option>
+								</select>
+							</div>
+	            		</div>
+						<!--补充说明-->
+		                <div class="form-group">
+						    <label for="comment" class="col-sm-2 control-label">补充说明</label>
+						    <div class="col-sm-10">
+						    	<textarea class="form-control" rows="4" name="comment" id="comment" maxlength="300" placeholder="（选填）如有需要请填写，方便老师快速审核..."></textarea>
+							</div>
+						</div>
+						<div style="height: 45px;"></div>
+						<!--提交按钮-->
+						<div align="center">
+							<button type="submit" class="btn btn-success" style="width: 85%!important;">确认申请</button>
+						</div>
+					</form>
+	            </div>
+	            
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/metisMenu.min.js"></script>
+    <script src="../js/main.min.js"></script>
+	<script type="text/javascript">
+		$('.btn-success').click(function(){
+			
+			var data = new FormData();
+			
+			data.append('name',$('#name').val());
+			data.append('num',$('#num').val());
+			data.append('category',$('#category').val());
+			data.append('academy',$('#academy').val());
+			data.append('stu_num',$('#stu_num').val());
+			data.append('comment',$('#comment').val());
+			
+			$.get(main_url + '/api/culture_product/post',data,function(res){
+				if(res.status){
+					//返回结果
+					alert(res.data.msg);
+					if(confirm("提交成功，您可以在个人中心查看进度")){
+						window.location.href = 'progress.html';
+					}
+				}
+				else{
+					alert("未知错误，请稍后尝试");
+					return false;
+				}
+			})
+		});
+		
+		
+	</script>
+</body>
+
+</html>
