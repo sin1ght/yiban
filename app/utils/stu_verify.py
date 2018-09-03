@@ -58,9 +58,9 @@ class StuVerify:
 
 
 def get_stu_academy(stu_num):
-    res = StuVerify.get_stu_info(stu_num, 'http://222.198.128.126', '20164404', '169197')
+    res = StuVerify.get_stu_info(stu_num, 'http://222.198.128.126', 'xxx', 'xxx')
     return res['academy']
 
 
 if __name__ == '__main__':
-    print get_stu_academy('20164366')
+    print get_stu_academy('xxx')
